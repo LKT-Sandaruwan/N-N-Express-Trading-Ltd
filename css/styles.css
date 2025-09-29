@@ -533,7 +533,7 @@ body {
 }
 
 .footer-brand img {
-  height: 50px;
+  height: 60px;
   margin-bottom: 10px;
 }
 
@@ -669,7 +669,6 @@ body {
     margin-left: 0;
   }
 }
-
 
 /* Services cards*/
 .service-cards {
