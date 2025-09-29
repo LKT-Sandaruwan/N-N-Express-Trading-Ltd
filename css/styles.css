@@ -12,10 +12,6 @@ body {
   padding: 0.75rem 1.5rem;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
-  height: 70px;
-  position: fixed;
-  width: 100%;
-  top: 0;
 }
 
 /* Sticky / Scroll Navbar */
@@ -32,6 +28,10 @@ body {
   letter-spacing: 0.5px;
 }
 
+.collapse {
+  padding-right: 10rem;
+}
+
 /* Navbar Links */
 .navbar-nav .nav-link {
   color: #022c6b;
@@ -46,13 +46,11 @@ body {
   color: #FFC107; /* Hover Amber */
 }
 
-.navbar-nav .nav-link.active {
-  color: #1976D2; /* Active Medium Blue */
-}
 
 /* Dropdown Menu */
 .dropdown-menu {
   background: rgba(16, 42, 67, 0.95);
+  -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   border: none;
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.35);
@@ -83,7 +81,7 @@ body {
 }
 
 .dropdown-item:hover {
-  background-color: rgba(255, 193, 7, 0.15); /* Amber hover effect */
+  background-color: rgba(255, 193, 7, 0.15);
   color: #FFC107;
   padding-left: 28px;
 }
@@ -109,24 +107,15 @@ body {
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%230D47A1' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 
+
 /* Sticky / Mobile Hamburger */
 @media (max-width: 768px) {
   .navbar-toggler {
-    border: 2px solid #0D47A1;
+    border: 2px solid #0D47A1 !important;
     border-radius: 6px;
     padding: 6px 10px;
   }
-  .navbar-collapse {
-    background: #0D47A1;
-  }
-  .navbar-collapse .nav-link {
-    color: #FFFFFF;
-  }
-  .navbar-collapse .nav-link:hover {
-    color: #FFC107;
-  }
 }
-
 
 /*  Hero */
 .hero-fullscreen {
